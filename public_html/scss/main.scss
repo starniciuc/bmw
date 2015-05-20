@@ -8,3 +8,52 @@ and open the template in the editor.
     Author     : Mihai
 */
 
+@font-face {
+  font-family: 'BMWType_Bold';
+  src: url('../font/BMWRgBd.eot');
+  src: local('?'),
+    url('../font/BMWRgBd.woff') format('woff'),
+    url('../font/BMWRgBd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BMWType_Light';
+  src: url('../font/bmw_type_web_light/bmwtypewebli.eot' );
+  src: local('?'),
+    url('../font/bmw_type_web_light/bmwtypewebli.woff') format('woff'),
+    url('../font/bmw_type_web_light/bmwtypewebli.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header{
+    h1{
+        color: #D9DADA;
+        font-size: 15px;
+        margin: 17px 0;
+    }
+
+    border-bottom: 1px solid #bebebe;
+}
+
+section{
+    
+    .banner-section{
+        img{
+            width: 100%;
+        }
+    }
+    
+    .logo{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+main{
+    .track-map{
+        width: 100%;
+    }
+}
