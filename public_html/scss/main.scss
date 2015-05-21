@@ -10,7 +10,45 @@ and open the template in the editor.
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext,cyrillic);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
-$font-bmw: 'Open Sans', sans-serif;
+@font-face {
+  font-family: 'BMW';
+  src: url('../fonts/BMWRgBd.eot');
+  src: local('?'),
+    url('../fonts/BMWRgBd.woff') format('woff'),
+    url('../font/BMWRgBd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMWType_Light';
+  src: url('../fonts/bmw_type_web_light/bmwtypewebli.eot' );
+  src: local('?'),
+    url('../fonts/bmw_type_web_light/bmwtypewebli.woff') format('woff'),
+    url('../fonts/bmw_type_web_light/bmwtypewebli.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: BMWGlobal; 
+	src: url(../fonts/BMWGlobal_Pro_bold_0.ttf);
+        font-weight: bold;
+}
+
+@font-face {
+	font-family: BMWGlobal; 
+	src: url(../fonts/BMWGlobal_Pro_reg_0.ttf);
+        font-weight: normal;
+}
+
+@font-face {
+	font-family: BMWGlobal; 
+	src: url(../fonts/BMWGlobal_Pro_light_0.ttf);
+        font-weight: 300;
+}
+
+$font-bmw: 'BMWGlobal', 'BMW', 'Open Sans', sans-serif;
 
 body{
     font-family: $font-bmw;
@@ -63,6 +101,9 @@ h2{
     &.grey{
         color: #B2B3B3;
     }
+}
+p{
+    font-weight: 300;
 }
 main{
     .track-map{
@@ -121,6 +162,7 @@ main{
                     text-align: center;
                     color: #434242;
                     font-size: 16px;
+                    font-weight: 300;
 
                     &:first-child{
                         font-weight: bold;
@@ -155,7 +197,8 @@ main{
                     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#357ee5', endColorstr='#0040c6',GradientType=0 ); /* IE6-9 */
                     color: #FFFFFF;
                     padding: 5px 0;
-
+                    font-weight: bold;
+                    
                     &:first-child{
                         background: none;
                     }
@@ -179,6 +222,7 @@ main{
         text-decoration: underline;
         font-size: 16px;
         margin-bottom: 20px;
+        font-weight: 300;
 
         &:hover{
             text-decoration: none;
@@ -347,10 +391,11 @@ main{
         padding: 3px 8px;
         width: 100px;
         text-align: center;
-        font-weight: bold;
         display: block;
+        font-size: 13px;
         margin-top: 10px;
         margin-bottom: 3px;
+        font-weight: normal;
     }
     .first-block{
         h1{
