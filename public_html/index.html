@@ -40,7 +40,7 @@
                             <h1>ЧЕМПИОНАТ ЭЛИТАВТО.</h1>
                             <h2>СТАТЬ ПЕРВЫМ СРЕДИ ПЕРЫХ.</h2>
                             <div class="banner-section">
-                                <button class="btn btn-submit small">Принять участие</button>
+                                <button class="btn btn-submit small" onclick="goScroll('subscribe');">Принять участие</button>
                                 <img src="img/banner.png" alt="Champions BMW">
                             </div>
                         </div>
@@ -56,39 +56,39 @@
                                     Абакан</h2>
                             </div>
                             <div class='col-md-2'>
-                                <div class="block-head">
+                                <div class="block-head" onclick="goScroll('about');">
                                     <div class="img-block">
                                         <img src="img/img1.png" alt="img">
                                     </div>
                                     <h4>ПОДРОБНЕЕ О ЧЕМПИОНАТЕ.</h4>
-                                    <a href="#" class="more"><i class="fa fa-chevron-right"></i> Узнать больше</a>
+                                    <a href="javascript: goScroll('about');" class="more"><i class="fa fa-chevron-right"></i> Узнать больше</a>
                                 </div>
                             </div>
                             <div class='col-md-2'>
-                                <div class="block-head">
+                                <div class="block-head"  onclick="goScroll('subscribe');">
                                     <div class="img-block">
                                         <img src="img/img2.png" alt="img">
                                     </div>
                                     <h4>РЕГИСТРАЦИЯ УЧАСТИЯ.</h4>
-                                    <a href="#" class="more"><i class="fa fa-chevron-right"></i> Узнать больше</a>
+                                    <a href="javascript: goScroll('subscribe');" class="more"><i class="fa fa-chevron-right"></i> Узнать больше</a>
                                 </div>
                             </div>
                             <div class='col-md-2'>
-                                <div class="block-head">
+                                <div class="block-head"  onclick="goScroll('table');">
                                     <div class="img-block">
                                         <img src="img/img3.png" alt="img">
                                     </div>
                                     <h4>ТУРНИРНАЯ ТАБЛИЦА.</h4>
-                                    <a href="#" class="more"><i class="fa fa-chevron-right"></i> Узнать больше</a>
+                                    <a href="javascript: goScroll('subscribe');" class="more"><i class="fa fa-chevron-right"></i> Узнать больше</a>
                                 </div>
                             </div>
                             <div class='col-md-2'>
-                                <div class="block-head">
+                                <div class="block-head"  onclick="goScroll('photo');">
                                     <div class="img-block">
                                         <img src="img/img4.png" alt="img">
                                     </div>
                                     <h4>#ELITCHAMPION ФОТОКОНКУРС.</h4>
-                                    <a href="#" class="more"><i class="fa fa-chevron-right"></i> Узнать больше</a>
+                                    <a href="javascript: goScroll('photo');" class="more"><i class="fa fa-chevron-right"></i> Узнать больше</a>
                                 </div>
                             </div>
                             <div class='col-md-2'>
@@ -107,7 +107,7 @@
                 <section>
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-12 first-block">
+                            <div class="col-lg-12 first-block" id="about">
                                 <h1>ЧЕМПИОНИТ ЭЛИТАВТО.</h1>
                                 <p>Это состязание любителей активного вождения на ценные призы и звание самого быстрого клиента ЭлитАвто. 
                                     Чемпионат проходит на гоночной трассе «Красное кольцо» в два этапа: </p>
@@ -130,7 +130,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <div class="subscribe">
+                                    <div class="subscribe" id="subscribe">
                                         <h1>АНКЕТА УЧАСТНИКА</h1>
                                         <img src="img/pilot.png" alt='pilot' class="pilot-img">
                                         <div class="row">
@@ -246,7 +246,7 @@
                 <section>
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-lg-12" id="table">
                                 <h1>ТУРНИРНАЯ ТАБЛИЦА.</h1>
                                 <h2>ТОП-10.</h2>
                                 <table class="track-lap">
@@ -404,7 +404,7 @@
                     </div>
                 </section>
 
-                <section>
+                <section id="photo">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
