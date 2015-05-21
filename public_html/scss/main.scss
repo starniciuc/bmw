@@ -7,7 +7,6 @@ and open the template in the editor.
     Created on : May 19, 2015, 8:26:28 PM
     Author     : Mihai
 */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext,cyrillic);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
 @font-face {
@@ -21,34 +20,16 @@ and open the template in the editor.
 }
 
 @font-face {
-  font-family: 'BMWType_Light';
-  src: url('../fonts/bmw_type_web_light/bmwtypewebli.eot' );
+  font-family: 'BMW';
+  src: url('../fonts/bmwtypewebli.eot' );
   src: local('?'),
-    url('../fonts/bmw_type_web_light/bmwtypewebli.woff') format('woff'),
-    url('../fonts/bmw_type_web_light/bmwtypewebli.ttf') format('truetype');
-  font-weight: normal;
+    url('../fonts/bmwtypewebli.woff') format('woff'),
+    url('../fonts/bmwtypewebli.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
 
-@font-face {
-	font-family: BMWGlobal; 
-	src: url(../fonts/BMWGlobal_Pro_bold_0.ttf);
-        font-weight: bold;
-}
-
-@font-face {
-	font-family: BMWGlobal; 
-	src: url(../fonts/BMWGlobal_Pro_reg_0.ttf);
-        font-weight: normal;
-}
-
-@font-face {
-	font-family: BMWGlobal; 
-	src: url(../fonts/BMWGlobal_Pro_light_0.ttf);
-        font-weight: 300;
-}
-
-$font-bmw: 'BMWGlobal', 'BMW', 'Open Sans', sans-serif;
+$font-bmw: 'BMW', sans-serif;
 
 body{
     font-family: $font-bmw;
