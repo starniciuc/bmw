@@ -10,23 +10,23 @@ and open the template in the editor.
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
 @font-face {
-  font-family: 'BMW';
-  src: url('../fonts/BMWRgBd.eot');
-  src: local('?'),
-    url('../fonts/BMWRgBd.woff') format('woff'),
-    url('../font/BMWRgBd.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'BMW';
+    src: url('../fonts/BMWRgBd.eot');
+    src: local('?'),
+        url('../fonts/BMWRgBd.woff') format('woff'),
+        url('../font/BMWRgBd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'BMW';
-  src: url('../fonts/bmwtypewebli.eot' );
-  src: local('?'),
-    url('../fonts/bmwtypewebli.woff') format('woff'),
-    url('../fonts/bmwtypewebli.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
+    font-family: 'BMW';
+    src: url('../fonts/bmwtypewebli.eot' );
+    src: local('?'),
+        url('../fonts/bmwtypewebli.woff') format('woff'),
+        url('../fonts/bmwtypewebli.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
 $font-bmw: 'BMW', sans-serif;
@@ -179,7 +179,7 @@ main{
                     color: #FFFFFF;
                     padding: 5px 0;
                     font-weight: bold;
-                    
+
                     &:first-child{
                         background: none;
                     }
@@ -386,6 +386,10 @@ main{
             margin-bottom: 10px;
         }
     }
+
+}
+.no-wrap{
+    white-space: nowrap
 }
 .btn.btn-submit{
     background: none;
@@ -507,12 +511,12 @@ footer{
     padding: 7px;
     box-shadow: none;
     border: 0;
-    
+
     .content-m{
         padding: 10px;
         background: #FFFFFF;
     }
-    
+
     .close{
         display: block;
         position: absolute;
@@ -525,6 +529,11 @@ footer{
     }
 }
 
+@media(max-width:1200px){
+    .no-wrap{
+        font-size: 12px;
+    }
+}
 @media(max-width:767px){
     .photo-block{
         padding-right: 0;
